@@ -1,0 +1,35 @@
+*{
+box-sizing: border-box;
+
+}
+
+.noticias {
+    font-size: 100px;
+    background-color: rgb(12, 166, 227);
+    background-image: url(imagenes/noticias.png);
+    text-align: center;
+    
+
+}           
+
+.river {
+width: 50%;
+height: 40%;
+
+}
+.ariver {
+width: 50%;
+display: flex;
+ text-align: right;
+
+
+}
+.aboca img {
+width: 50%;
+height: 40%;
+
+}
+.pboca{
+width: 50%;
+height: 40%;
+}
