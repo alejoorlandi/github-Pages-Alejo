@@ -5,18 +5,25 @@
 /* css reset */
 *{
     padding: 0;
-    margin: 0;
+    margin: 20px;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
 }
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
+     
+        font-family: "Oswald", sans-serif;
+        background-color: #000000;
+        /* Pattern from https://www.heropatterns.com/ */
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%23540606' fill-opacity='0.4'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        color: #d1d7dc;
+        color: #fff;
+        font-size: 16px;
+      }
 
 header {
     width: 100%;
-    height: 100vh;
+    height: 250px;
   
 
 }.logo {
@@ -31,19 +38,13 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
-label{
-    font-size: 25px;
-    color:rgba(0, 128, 255, 0.2);
-    margin-right: 20px;
-    cursor:pointer;
 
-}
 .nav-menu {
     position: fixed;
     width: 100%;
     height: 0vh;
     top:100px;
-    background: black;
+    background: rgb(71, 19, 19);
     text-align: center;
     transition: all;
 }
@@ -55,7 +56,7 @@ label{
     transition: all .5s;
 }
 .nav-menu li a {
-color: rgb(7, 91, 88);
+color: rgb(230, 240, 239);
 font-size: 16px;
 text-transform: uppercase;
 font-weight: 600;
@@ -63,7 +64,7 @@ font-weight: 600;
 }
 
 .nav-menu li a.active, .nav-menu li a:hover {
-color: rgba(0, 128, 255, 0.2);
+color: rgba(223, 227, 231, 0.2);
 transform: .3s;
 }
 
@@ -78,6 +79,31 @@ display: none;
 
     display: block;
 }
+/* News Cards */
+.news-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin: 70px 0;
+  }
+  
+  .news-cards img {
+    width: 100%;
+    height: 180px;
+  }
+  
+  .news-cards h3 {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  
+  .news-cards a {
+    padding: 10px 0;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+  }
     
 
 
