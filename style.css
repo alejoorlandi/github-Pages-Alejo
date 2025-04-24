@@ -3,34 +3,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
 
 /* css reset */
-*{
+* {
     padding: 0;
     margin: 20px;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
 }
+
 body {
-     
-        font-family: "Oswald", sans-serif;
-        background-color: #000000;
-        /* Pattern from https://www.heropatterns.com/ */
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%23540606' fill-opacity='0.4'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-        color: #d1d7dc;
-        color: #fff;
-        font-size: 16px;
-      }
+
+    font-family: "Oswald", sans-serif;
+    background-color: #000000;
+    /* Pattern from https://www.heropatterns.com/ */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%23540606' fill-opacity='0.4'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    color: #d1d7dc;
+    color: #fff;
+    font-size: 16px;
+}
 
 header {
     width: 100%;
     height: 250px;
-  
 
-}.logo {
+
+}
+
+.logo {
     width: 100px;
     height: 100px;
     margin-left: 20px;
 }
+
 nav {
     height: 100px;
     width: 100%;
@@ -43,7 +47,7 @@ nav {
     position: fixed;
     width: 100%;
     height: 0vh;
-    top:100px;
+    top: 100px;
     background: rgb(71, 19, 19);
     text-align: center;
     transition: all;
@@ -55,98 +59,105 @@ nav {
     margin: 50px 0;
     transition: all .5s;
 }
+
 .nav-menu li a {
-color: rgb(230, 240, 239);
-font-size: 16px;
-text-transform: uppercase;
-font-weight: 600;
+    color: rgb(230, 240, 239);
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
 
 }
 
 .nav-menu li a.active, .nav-menu li a:hover {
-color: rgba(223, 227, 231, 0.2);
-transform: .3s;
+    color: rgba(223, 227, 231, 0.2);
+    transform: .3s;
 }
 
 #check {
-display: none;
+    display: none;
 
 }
-#check:checked ~ .nav-menu  {
+
+#check:checked~.nav-menu {
     height: 100vh;
 }
-#check:checked ~ .nav-menu li{
+
+#check:checked~.nav-menu li {
 
     display: block;
 }
+
 /* News Cards */
 .news-cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 25px;
     margin: 70px 0;
-  }
-  
-  .news-cards img {
+}
+
+.news-cards img {
     width: 100%;
     height: 180px;
-  }
-  
-  .news-cards h3 {
+}
+
+.news-cards h3 {
     font-size: 20px;
     margin: 10px 0;
-  }
-  
-  .news-cards a {
+}
+
+.news-cards a {
     padding: 10px 0;
     color: #f2f2f2;
     text-transform: uppercase;
     display: inline-block;
     font-weight: bold;
-  }
-    
+}
+
 
 
 
 @media screen and (min-width:768px) {
-    .logo{
+    .logo {
         margin-left: 50px;
     }
-    nav{
+
+    nav {
         height: 100px;
     }
-    
-    
-label{
-    display: none;
 
-}
-.nav-menu{
-    position: relative;
-    height: 100px;
-    top: 0;
-    background: none;
-    transition: none;
-    text-align: right;
-    margin-right: 50px;
 
+    label {
+        display: none;
+
+    }
+
+    .nav-menu {
+        position: relative;
+        height: 100px;
+        top: 0;
+        background: none;
+        transition: none;
+        text-align: right;
+        margin-right: 50px;
+
+    }
+
+    .nav-menu li {
+        display: inline-block;
+        line-height: 100px;
+        margin: 0 20px;
+        transition: none;
+    }
+
+    .nav-menu li a {
+        font-size: 12px;
+    }
 }
-.nav-menu li{
-    display: inline-block;
-    line-height: 100px;
-    margin: 0 20px;
-    transition: none;
-}
-.nav-menu li a {
-    font-size: 12px;
-}
-}
- 
+
 @media (max-width: 500px) {
     .news-cards {
-      grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
     }
-  
-    
+
+
 }
-    
